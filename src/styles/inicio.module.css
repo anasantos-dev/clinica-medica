@@ -1,141 +1,115 @@
-/* ---------- Início ---------- */
+/* Fundo principal */
 .mainBg {
-  
-  background: #fdf7f1; 
-  display: flex;
-  flex-direction: column;
+  background: #f5f9fc; 
+  width: 100%;
+  min-height: 100vh;
 }
 
+/* Hero */
 .heroSection {
-  padding-bottom: 40px;  /* */
+  padding: 60px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Hero do Início (fundo bege) */
-.heroSectionInicio {
-  background: #fdf7f1;
+.heroGradient {
+  background: linear-gradient(135deg, #ffffff, #eef6fb);
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
   width: 100%;
-  padding: 5px 0;
+  max-width: 1200px;
 }
 
-/* Hero do Sobre Mim (fundo branco) */
-.heroSectionSobre {
-  background: #fff;
-  width: 100%;
-  padding: 5px 0;
-}
-
-/* Container principal */
 .heroCard {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
   align-items: center;
-  justify-content: space-between;  
-  box-shadow: none;
-  padding: 4rem 5%;
-  width: 100%;
-  max-width: 1200px; /* limite centralizado */
-  margin: 0 auto;
-  gap: 5%;
-  border-radius: 0;
+  justify-content: space-between;
 }
 
+/* Texto */
 .heroTextBox {
-  flex: 1 1 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
+  flex: 1 1 500px;
 }
 
 .heroTitle {
-  font-size: 2.6rem;
-  font-weight: 800;
-  color: #1a6e4e;
-  margin-bottom: 18px;
-  line-height: 1.15;
-  border-left: 4px solid #5fd3a1; /* barra verde à esquerda */
-  padding-left: 12px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.3;
 }
 
 .heroTitleGreen {
-  color: #1a6e4e;
-  display: block;
+  color: #0f4c81;
 }
 
 .heroTitleGold {
-  color: #c9a06c;
-  display: block;
-  font-weight: 700;
-  margin-top: 6px;
-  font-size: 2.4rem;
+  color: #00796b; 
 }
 
 .heroDesc {
-  line-height: 1.7;
-  font-size: 1.1rem;
-  color: #333;
-  max-width: 540px;
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Botão */
+.heroActions {
   margin-top: 1rem;
 }
 
-.heroActions {
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
 .heroBtnSecondary {
-  background: #fff;
-  color: #5fd3a1;
-  font-weight: 700;
-  padding: 10px 28px;   /* mesmo padding do botão da Home */
-  border-radius: 32px;
-  text-decoration: none;
-  font-size: 1rem;
-  border: 2px solid #5fd3a1;
-  display: inline-flex;      /* só ocupa o espaço do texto */
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s, color 0.2s;
-}
-.heroBtnSecondary:hover {
-  background: #5fd3a1;
+  background: #0f4c81;
   color: #fff;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.heroImgBox {
-  flex: 1 1 50%;
+.heroBtnSecondary:hover {
+  background: #083858;
+  transform: scale(1.05);
+}
+
+.heroBtnIcon {
   display: flex;
-  align-items: center;
+}
+
+/* Imagem */
+.heroImgBox {
+  flex: 1 1 400px;
+  display: flex;
   justify-content: center;
 }
 
 .heroImg {
-  width: 100%;
-  max-width: 30rem;
-  height: auto;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px #0002;
-  object-fit: cover;
-  background: #fff;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-/* ---------- Responsivo ---------- */
+/* Responsivo */
 @media (max-width: 900px) {
   .heroCard {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    gap: 2rem;
-  }
-  .heroTextBox {
-    align-items: center;
+    flex-direction: column-reverse;
     text-align: center;
   }
-  .heroTitle {
-    font-size: 2rem;
+
+  .heroTextBox {
+    flex: 1 1 100%;
   }
-  .heroImg {
-    max-width: 90vw;
+
+  .heroImgBox {
+    flex: 1 1 100%;
   }
 }

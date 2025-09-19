@@ -1,212 +1,136 @@
-/* Hero do Sobre Mim (fundo branco) */
-.heroSectionSobre {
-  background: #fff;
-  width: 100%;
-  padding: 5px 0;
+.heroImgSobre {
+  border-radius: 12px;
+  max-height: 400px;
+  object-fit: cover;
 }
 
-/* ---------- CURRÍCULO (Formação | Experiência) ---------- */
+/* CTA box */
+.ctaBox {
+  margin-top: 2rem;
+  background: #f1fdf8;
+  padding: 1.5rem;
+  border-left: 4px solid #2f9e78;
+  border-radius: 8px;
+  text-align: center;
+}
+.ctaBox h3 {
+  margin-bottom: 1rem;
+  color: #0f766e;
+  font-size: 1.1rem;
+}
+
+/* Timeline */
 .curriculoWrap {
-  display: grid;
-  grid-template-columns: 1fr 80px 1fr; /* esquerda | centro | direita */
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto 64px auto;
-  padding: 40px 24px 0 24px;
-  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.colLeft, .colRight {
+  flex: 1;
 }
 
 .blockTitle {
-  font-size: 2.1rem;
-  margin-bottom: 18px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
   color: #1a6e4e;
 }
-.blockTitle span { color: #5fd3a1; }
 
-/* Formação (timeline) */
-.colLeft { position: relative; }
-.eduTimeline { list-style: none; margin: 0; padding: 0; }
+.eduTimeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .eduItem {
-  display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 0.8rem;
-  padding: 1rem 0;
   position: relative;
-}
-.eduLine {
-  position: absolute; left: 13px; top: 0; bottom: 0;
-  width: 2px; background: #5fd3a133;
-}
-.eduIcon {
-  width: 28px; height: 28px;
-  display: flex; align-items: center; justify-content: center;
-  background: #e9fbf3;
-  border-radius: 8px;
-}
-.eduText h3 { margin: 0 0 4px 0; font-size: 1rem; font-weight: 700; color: #0f766e; }
-.eduText p  { margin: 0; font-size: .95rem; color: #475569; }
-
-/* Experiência (coluna direita) */
-.expItem {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 0.8rem;
-  padding: 1rem 0;
-  border-bottom: 1px dashed #cbd5e1;
-}
-.expYear { color: #0f766e; font-weight: 800; }
-.expText p { margin: 0; color: #0b1320; line-height: 1.55; }
-
-/* ---------- Como eu trabalho ---------- */
-.comoTrabalho {
-  text-align: center;
-  margin: 4rem 0 0 0;
-  width: 100%;
-  padding: 0 0 6rem 0;
-  background: linear-gradient(90deg, #a8e6cf 0%, #dcedc8 100%);
-  box-shadow: 0 4px 24px #0001;
-}
-.comoTrabalho h2 {
-  font-size: 1.8rem;
-  margin-bottom: 12px;
-  color: #1a6e4e;
-}
-.comoTrabalho p {
   margin-bottom: 2rem;
-  font-size: 1.1rem;
-  color: #444;
 }
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
-.card {
-  background: #ffffffcc;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 4px 18px #0001;
-}
-.card h3 { color: #24796b; margin-bottom: 12px; font-size: 1.2rem; }
-.card p  { font-size: 1rem; color: #333; }
 
-/* Coluna Central */
+.eduLine {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #2f9e78;
+}
+
+.eduIcon {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  font-size: 1.2rem;
+}
+
+.eduText {
+  margin-left: 2.5rem;
+}
+
+/* Linha central */
 .colCenter {
+  width: 50px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; /* distribui anos + ícones */
-  min-height: 100%;
-  padding: 20px 0;
 }
 
 .centerLine {
   position: absolute;
+  left: 50%;
   top: 0;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 3px;
-  background: #5fd3a133;
-  border-radius: 3px;
+  background: #ccc;
+  transform: translateX(-50%);
 }
 
 .centerMark {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  font-weight: 700;
-  color: #0f766e;
-  background: #fff;
-  padding: 4px 8px;
-  border-radius: 8px;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 .markDot {
   width: 12px;
   height: 12px;
-  background: #5fd3a1;
+  background: #2f9e78;
   border-radius: 50%;
+  display: inline-block;
+}
+
+.markYear {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.3rem;
 }
 
 .markIcon {
-  font-size: 1.4rem;
-  color: #5fd3a1;
+  font-size: 1.2rem;
 }
 
-/* ---------- Responsivo ---------- */
+/* Experiência */
+.expItem {
+  margin-bottom: 2rem;
+}
+
+.expYear {
+  font-weight: bold;
+  color: #c68c53;
+}
+
+.expText p {
+  margin: 0.5rem 0 0;
+  color: #333;
+}
+
+/* Responsivo */
 @media (max-width: 900px) {
-  .curriculoWrap { grid-template-columns: 1fr; gap: 2rem; margin: 2rem auto; }
-  .cards { grid-template-columns: 1fr; }
-}
+  .curriculoWrap {
+    flex-direction: column;
+  }
 
-.ctaBox {
-  background: #f4faf8; /* */
-  border-radius: 16px;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 2rem;
-  box-shadow: 0 4px 12px #0001;
-}
-
-.ctaBox h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #1a6e4e;
-  margin-bottom: 1.5rem;
-}
-
-.ctaButton {
-  display: inline-block;
-  background: #1a1a1a;
-  color: #fff;
-  padding: 12px 32px;
-  border-radius: 32px;
-  font-size: 1.05rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.ctaButton:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 16px #0003;
-}
-
-.heroBtnSecondary {
-  padding: 10px 24px !important;
-  font-size: 1rem !important;
-  font-weight: 700;
-  border: 2px solid #5fd3a1;
-  color: #5fd3a1;
-  background: #fff;
-  border-radius: 32px;
-  transition: background 0.2s, color 0.2s;
-}
-
-.heroBtnSecondary:hover {
-  background: #5fd3a1;
-  color: #fff;
-}
-
-.heroImgSobre {
-  height: 680px;     /* altura */
-  object-fit: cover; /* mantém a proporção */
-}
-
-/* Esconde a coluna central (timeline) no celular */
-@media (max-width: 900px) {
   .colCenter {
     display: none;
   }
 }
-
-
-
-

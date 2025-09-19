@@ -1,28 +1,54 @@
 .tratamentosSection {
-  padding: 60px 20px;
+  padding: 4rem 2rem;
+  background: #f9f9f9;
   text-align: center;
-  background: linear-gradient(to bottom, #e7d2af 0%, #c9a06c 100%);
 }
 
-.title {/* Sua Saúde */
-  font-size: 2rem;
-  font-weight: 800;
-  color: #1a6e4e; 
-  margin-bottom: 12px;
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1a6e4e;
+  margin-bottom: 0.5rem;
 }
-/* Conheça os principais..... */
+
 .subtitle {
-  font-size: 1.3rem;
-  color:  #1a6e4e;
-  margin: 0 auto 40px;
-  max-width: 900px;   /* largura máxima */
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.6;
 }
 
+/* Divider decorativo */
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 1rem 0 2rem 0;
+}
+
+.line {
+  width: 60px;
+  height: 3px;
+  background: #1a6e4e;
+  border-radius: 3px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #c68c53;
+  border-radius: 50%;
+}
+
+/* Cards */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -30,64 +56,48 @@
 .card {
   background: #fff;
   border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 16px #0001;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
   text-align: center;
-  min-height: 320px; /* altura mínima para alinhamento */
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-6px); /* leve efeito flutuar */
-  box-shadow: 0 8px 24px #0003;
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
 }
 
 .cardImg {
   width: 100%;
-  max-width: 220px;
-  height: 150px;
+  height: 180px;
   object-fit: cover;
   border-radius: 12px;
-  margin-bottom: 16px;
-  transition: transform 0.3s ease;
-}
-
-.card:hover .cardImg {
-  transform: scale(1.05); /* zoom leve na imagem */
+  margin-bottom: 1rem;
 }
 
 .card h3 {
-  color: #24796b;
-  margin-bottom: 8px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  color: #0f766e;
+  margin-bottom: 0.5rem;
 }
 
 .card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #444;
+  line-height: 1.5;
 }
 
-.divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 12px 0 20px;
-  gap: 8px;
-}
+/* Responsivo */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
 
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: #fff; /* dots brancos */
-  border-radius: 50%;
-}
+  .subtitle {
+    font-size: 1rem;
+  }
 
-.line {
-  width: 80px;
-  height: 3px;
-  background-color: #fff; /* linha branca mais grossa */
-  border-radius: 2px;
+  .cardImg {
+    height: 150px;
+  }
 }

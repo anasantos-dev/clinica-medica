@@ -2,7 +2,6 @@
   background: #f9f9f9;
   padding: 2rem 5% 1rem 5%;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
-
   margin-top: auto;
 
   display: flex;
@@ -16,6 +15,11 @@
   font-size: 0.85rem;
   color: #666;
   text-align: left;
+  margin-top: 1.5rem;
+}
+
+.copy strong {
+  color: #1a6e4e; /* Verde padrão da clínica */
 }
 
 .social {
@@ -30,21 +34,8 @@
 }
 
 .social a:hover {
-  color: #b5a564; 
+  color: #b5a564; /* Dourado suave no hover */
 }
-/* SOS Software */
-.copy {
-  margin-top: 1.5rem;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #666;
-}
-
-/* SOS Software */
-.copy strong {
-  color: #1a6e4e; 
-}
-
 
 /* Responsivo */
 @media (max-width: 768px) {
@@ -56,6 +47,7 @@
 
   .copy {
     text-align: center;
+    margin-top: 1rem;
   }
 
   .social {

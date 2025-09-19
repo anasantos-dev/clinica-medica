@@ -5,10 +5,10 @@ export function Chamada() {
     <section className={styles.chamadaSection}>
       <h2 className={styles.title}>
         <span className={styles.green}>Sua saúde merece atenção especial,</span>{" "}
-        <span className={styles.gold}>comece hoje!</span>
+        <span className={styles.gold}>agende sua consulta!</span>
       </h2>
 
-      {/* divider com linha e bolinhas */}
+      {/* Divider com linha e bolinhas */}
       <div className={styles.divider}>
         <span className={styles.line}></span>
         <span className={styles.dot}></span>
@@ -17,24 +17,23 @@ export function Chamada() {
       </div>
 
       <p className={styles.subtitle}>
-        Recupere sua energia e bem-estar com fisioterapia personalizada para
-        suas necessidades.
+        Atendimento médico humanizado em diversas especialidades.  
+        Cuide da sua saúde com qualidade, conforto e confiança.
       </p>
 
       <div className={styles.highlightBox}>
-       <h3>
-  <span> Dê o primeiro passo para cuidar de você </span>
-  <span className={styles.highlightText}>agora mesmo!</span>
-</h3>
+        <h3>
+          <span> Marque sua consulta com nossos especialistas </span>
+          <span className={styles.highlightText}>ainda hoje!</span>
+        </h3>
 
         <a
-  href="https://wa.me/5591980254953?text=Oi, gostaria de marcar um horário de fisioterapia. Pode me ajudar?"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button className={styles.button}>AGENDAR ATENDIMENTO</button>
-</a>
-
+          href="https://wa.me/5591980254953?text=Olá, gostaria de agendar uma consulta médica."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className={styles.button}>AGENDAR CONSULTA</button>
+        </a>
       </div>
     </section>
   );

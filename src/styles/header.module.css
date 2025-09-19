@@ -1,136 +1,127 @@
-/* ---------- HEADER ---------- */
 .header {
   width: 100%;
-  padding: 1rem 5%;
   background: #fff;
+  padding: 1rem 5%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  position: sticky;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  z-index: 1000;
 }
 
-/* Logo e título */
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.8rem;
 }
 
 .logoImg {
-  width: 80px;
+  width: 50px;
   height: 50px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .logo h1 {
-  font-size: 1.9rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2f9e78; 
   margin: 0;
-  color: #5ca847;
-  font-weight: 700;
 }
 
 .logo span {
-  font-size: 0.9rem;
-  color: #b5a564;
-  margin-top: 2px;
+  font-size: 0.85rem;
+  color: #555;
   display: block;
 }
 
 /* Navegação */
 .nav {
-  flex: 1;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  transition: transform 0.3s ease;
+  gap: 1.5rem;
 }
 
 .nav a {
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 600;
   text-decoration: none;
-  color: #3b995f;
-  font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 
 .nav a:hover {
-  color: #0d9488;
+  color: #2f9e78;
 }
 
-/* Botão WhatsApp */
+/* Botão WhatsApp (desktop) */
 .whatsappBtn {
-  background: transparent;
-  border: 2px solid #10b981;
-  color: #10b981;
-  padding: 8px 18px;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 0.95rem;
+  background: #25d366;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
   text-decoration: none;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  transition: background 0.3s, transform 0.2s;
+  margin-left: 1rem;
 }
 
 .whatsappBtn:hover {
-  background: #10b981;
-  color: #fff;
+  background: #1ebe5d;
+  transform: scale(1.05);
 }
 
-.whatsappBtn i {
-  font-size: 1.1rem;
-}
-
-/* Botão Hamburguer */
+/* Menu mobile */
 .menuToggle {
   display: none;
   font-size: 1.8rem;
   background: none;
   border: none;
   cursor: pointer;
-  color: #3b995f;
-  z-index: 110;
+  color: #2f9e78;
+  z-index: 1100;
 }
 
-/* Overlay */
+/* Overlay fundo escuro */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 90;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 900;
 }
 
-/* Responsivo */
+/* Mobile */
 @media (max-width: 900px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav.open {
+    right: 0;
+  }
+
   .menuToggle {
     display: block;
   }
 
-  .nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 250px;
-    background: #fff;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 4rem 2rem;
-    transform: translateX(100%);
-    z-index: 100;
-  }
-
-  .nav.open {
-    transform: translateX(0);
-  }
-
   .whatsappBtn {
-    display: none; /* não aparece no mobile */
+    display: none; 
   }
 }

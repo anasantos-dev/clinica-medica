@@ -1,7 +1,7 @@
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Inicio } from './pages/Inicio';
-import { SobreMim } from './pages/SobreMim';
+import { Sobre } from './pages/SobreMim';
 import { Tratamentos } from './pages/Tratamentos'; 
 import { Avaliacoes } from './pages/Avaliacoes';
 import { InformacoesUteis } from './pages/InformacoesUteis';
@@ -19,7 +19,7 @@ function App() {
         </section>
 
         <section id="sobre">
-          <SobreMim />
+          <Sobre />
         </section>
 
         <section id="tratamentos">   
