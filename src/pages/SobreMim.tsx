@@ -1,52 +1,49 @@
-import base from '../styles/inicio.module.css';   
-import styles from '../styles/sobre.module.css';  
-import img from '../assets/sobreMim.jpg';
+import base from '../styles/inicio.module.css';
+import styles from '../styles/sobre.module.css';
+import img from '../assets/logo.jpeg';
 
-export function SobreMim() {
+export function Sobre() {
   return (
     <main className={base.mainBg}>
-            <section className={base.heroSectionSobre}>
+      {/* Sessão Sobre */}
+      <section className={base.heroSectionSobre}>
         <div className={base.heroCard}>
           <div className={base.heroTextBox}>
             <h1 className={base.heroTitle}>
-              <span className={base.heroTitleGreen}>Sobre mim<br /></span>
-              <span className={base.heroTitleGold}>Fisioterapia humanizada é minha prioridade</span>
+              <span className={base.heroTitleGreen}>Sobre a Clínica<br /></span>
+              <span className={base.heroTitleGold}>Cuidado médico humanizado é nossa prioridade</span>
             </h1>
 
             <p className={base.heroDesc}>
-              Olá! Eu sou  <b>Israel Cascaes</b>, fisioterapeuta comprometido em promover saúde,
-              autonomia e qualidade de vida em todas as fases da vida. Minha prática é guiada pelo respeito
-              às particularidades de cada paciente, oferecendo um atendimento próximo, acolhedor e baseado em escuta atenta.<br /><br />
-              Ao longo da minha trajetória, dediquei atenção especial ao cuidado com idosos, auxiliando na
-              prevenção de limitações, na recuperação de movimentos e na valorização da independência.
-              Acredito que a fisioterapia vai além do tratamento: é uma oportunidade de transformar vidas,
-              devolver confiança e proporcionar resultados reais na sua saúde!
+              Bem-vindo à <b>Clínica Saúde Plena</b>, um espaço dedicado ao bem-estar integral.
+              Nossa missão é oferecer atendimento médico humanizado, com tecnologia, experiência
+              e empatia para todas as idades. Cada paciente é acolhido de forma única, com foco
+              em prevenção, diagnóstico preciso e acompanhamento contínuo.<br /><br />
+              Contamos com uma equipe multidisciplinar preparada para proporcionar saúde,
+              qualidade de vida e confiança em cada etapa do seu cuidado.
             </p>
 
             <div className={styles.ctaBox}>
-  <h3>Agende sua consulta e cuide da sua saúde hoje mesmo!</h3>
- <a
-  href="https://wa.me/5591980254953"
-  target="_blank"
-  rel="noopener noreferrer"
-  className={base.heroBtnSecondary}
->
-  ENTRE EM CONTATO
-</a>
-</div>
-
+              <h3>Agende sua consulta e cuide da sua saúde hoje mesmo!</h3>
+              <a
+                href="https://wa.me/5591980254953"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={base.heroBtnSecondary}
+              >
+                ENTRE EM CONTATO
+              </a>
+            </div>
           </div>
 
           <div className={base.heroImgBox}>
-  <img 
-    src={img} 
-    alt="Fisioterapeuta Dr. Israel Cascaes" 
-    className={`${base.heroImg} ${styles.heroImgSobre}`} 
-  />
-</div>
-
+            <img
+              src={img}
+              alt="Equipe médica da Clínica Saúde Plena"
+              className={`${base.heroImg} ${styles.heroImgSobre}`}
+            />
+          </div>
         </div>
-        
       </section>
 
       {/* CURRÍCULO – timeline e experiência */}
@@ -54,31 +51,31 @@ export function SobreMim() {
         {/* Formação */}
         <div className={styles.colLeft}>
           <h2 className={styles.blockTitle}>
-            <span>Trajetória em </span><strong>Fisioterapia</strong>
+            <span>Nossa </span><strong>Formação</strong>
           </h2>
           <ol className={styles.eduTimeline}>
             <li className={styles.eduItem}>
               <span className={styles.eduLine} />
               <span className={styles.eduIcon}>🎓</span>
               <div className={styles.eduText}>
-                <h3>Graduação em Fisioterapia</h3>
-                <p>Universidade XXXXX</p>
+                <h3>Graduações em Medicina e Especialidades</h3>
+                <p>Universidades de referência no Brasil</p>
               </div>
             </li>
             <li className={styles.eduItem}>
               <span className={styles.eduLine} />
               <span className={styles.eduIcon}>🎓</span>
               <div className={styles.eduText}>
-                <h3>Especialização em Fisioterapia XXXXXXXXXXXX</h3>
-                <p>Universidade XXXXXC</p>
+                <h3>Residências médicas e certificações</h3>
+                <p>Clínicas e hospitais de excelência</p>
               </div>
             </li>
             <li className={styles.eduItem}>
               <span className={styles.eduLine} />
               <span className={styles.eduIcon}>🎓</span>
               <div className={styles.eduText}>
-                <h3>Certificação em XXXXXXXXXXXXXXXX</h3>
-                <p>XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                <h3>Atualizações constantes</h3>
+                <p>Congressos e cursos nacionais e internacionais</p>
               </div>
             </li>
           </ol>
@@ -103,24 +100,24 @@ export function SobreMim() {
         {/* Experiência */}
         <div className={styles.colRight}>
           <h2 className={styles.blockTitle}>
-            <span>Atuação como </span><strong>Fisioterapeuta</strong>
+            <span>Experiência da </span><strong>Clínica</strong>
           </h2>
           <div className={styles.expItem}>
             <div className={styles.expYear}>202X</div>
             <div className={styles.expText}>
-              <p><strong>Início da prática clínica</strong> com foco em idosos</p>
+              <p><strong>Fundação da Clínica Saúde Plena</strong>, com foco em atendimento humanizado</p>
             </div>
           </div>
           <div className={styles.expItem}>
             <div className={styles.expYear}>202X</div>
             <div className={styles.expText}>
-              <p><strong>+XX anos de experiência</strong> em reabilitação e prevenção</p>
+              <p><strong>+XX anos de experiência</strong> em diversas especialidades médicas</p>
             </div>
           </div>
           <div className={styles.expItem}>
             <div className={styles.expYear}>Hoje</div>
             <div className={styles.expText}>
-              <p>Atuação em reabilitação, com atenção especial à autonomia e segurança de idosos.</p>
+              <p>Referência em saúde preventiva, diagnóstica e reabilitadora na região.</p>
             </div>
           </div>
         </div>

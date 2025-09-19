@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../styles/header.module.css";
-import logoImg from "../assets/logo.jpeg"; 
+import logoImg from "../assets/logo.jpeg"; // ajuste para o logo da clínica depois
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,10 +9,10 @@ export function Header() {
     <header className={styles.header}>
       {/* Logo + nome */}
       <div className={styles.logo}>
-        <img src={logoImg} alt="Logo Israel Cascaes" className={styles.logoImg} />
+        <img src={logoImg} alt="Logo Clínica Vida Saudável" className={styles.logoImg} />
         <div>
-          <h1>ISRAEL CASCAES</h1>
-          <span>Fisioterapia Domiciliar</span>
+          <h1>CLÍNICA VIDA SAUDÁVEL</h1>
+          <span>Cuidado Médico Humanizado</span>
         </div>
       </div>
 
@@ -30,10 +30,10 @@ export function Header() {
       {/* Navegação */}
       <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
         <a href="#inicio" onClick={() => setMenuOpen(false)}>Início</a>
-        <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre Mim</a>
-        <a href="#tratamentos" onClick={() => setMenuOpen(false)}>Sua Saúde</a>
-        <a href="#avaliacoes" onClick={() => setMenuOpen(false)}>Avaliações</a>
-        <a href="#informacoes" onClick={() => setMenuOpen(false)}>Informações Úteis</a>
+        <a href="#sobre" onClick={() => setMenuOpen(false)}>Nossa História</a>
+        <a href="#especialidades" onClick={() => setMenuOpen(false)}>Especialidades</a>
+        <a href="#avaliacoes" onClick={() => setMenuOpen(false)}>Depoimentos</a>
+        <a href="#informacoes" onClick={() => setMenuOpen(false)}>Dicas de Saúde</a>
         <a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a>
       </nav>
 
@@ -44,7 +44,7 @@ export function Header() {
         rel="noopener noreferrer"
         className={styles.whatsappBtn}
       >
-        <i className="fab fa-whatsapp"></i> Fale no WhatsApp
+        <i className="fab fa-whatsapp"></i> Agende sua Consulta
       </a>
     </header>
   );

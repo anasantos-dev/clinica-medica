@@ -1,70 +1,68 @@
 import styles from "../styles/tratamentos.module.css";
-import reabilitacaoImg from "../assets/tratamentos/reabilitacao.jpeg";
-import mobilidadeImg from "../assets/tratamentos/mobilidade.jpg";
-import doresImg from "../assets/tratamentos/dores.jpg";
-import geriatricaImg from "../assets/tratamentos/geriatrica.jpg";
-import neurologicaImg from "../assets/tratamentos/neurologica.jpg";
-import respiratoriasImg from "../assets/tratamentos/respiratorias.jpg";
-import ultrassomImg from "../assets/tratamentos/ultrason.jpg";
-import eletroterapiaImg from "../assets/tratamentos/eletroterapia.jpg";
+import clinicaGeralJpg from "../assets/especialidades/clinicaGeral.jpg";
+import pediatriaJpg from "../assets/especialidades/pediatria.jpg";
+import ginecologiaJpg from "../assets/especialidades/ginecologia.jpg";
+import cardiologiaJpg from "../assets/especialidades/cardiologia.jpg";
+import dermatologiaJpg from "../assets/especialidades/dermatologia.jpg";
+import oftalmologiaJpg from "../assets/especialidades/oftalmologia.jpg";
+import ortopediaJpg from "../assets/especialidades/ortopedia.jpg";
+import endocrinologiaJpg from "../assets/especialidades/endocrinologia.jpg";
 
 export function Tratamentos() {
   const cards = [
     {
-      img: reabilitacaoImg,
-      titulo: "Reabilitação de Lesões",
-      desc: "Tratamentos focados em acelerar a recuperação e restaurar funções após lesões."
+      img: clinicaGeralJpg,
+      titulo: "Clínica Geral",
+      desc: "Atendimento inicial, diagnóstico e encaminhamento para especialidades específicas."
     },
     {
-      img: mobilidadeImg,
-      titulo: "Melhoria da Mobilidade",
-      desc: "Exercícios e técnicas para aumentar a flexibilidade e amplitude de movimento."
+      img: pediatriaJpg,
+      titulo: "Pediatria",
+      desc: "Cuidado completo da saúde infantil, do nascimento até a adolescência."
     },
     {
-      img: doresImg,
-      titulo: "Alívio de Dores",
-      desc: "Recursos fisioterapêuticos para reduzir dores musculares e articulares."
+      img: ginecologiaJpg,
+      titulo: "Ginecologia & Obstetrícia",
+      desc: "Saúde da mulher, acompanhamento pré-natal e cuidados ginecológicos."
     },
     {
-      img: geriatricaImg,
-      titulo: "Fisioterapia Geriátrica",
-      desc: "Tratamento especializado para idosos, promovendo autonomia e qualidade de vida."
+      img: cardiologiaJpg,
+      titulo: "Cardiologia",
+      desc: "Prevenção, diagnóstico e tratamento de doenças do coração e circulação."
     },
     {
-      img: neurologicaImg,
-      titulo: "Condições Neurológicas",
-      desc: "Reabilitação para pacientes com sequelas neurológicas, como AVC ou Parkinson."
+      img: dermatologiaJpg,
+      titulo: "Dermatologia",
+      desc: "Tratamentos para pele, cabelo e unhas, promovendo saúde e estética."
     },
     {
-      img: respiratoriasImg,
-      titulo: "Condições Respiratórias",
-      desc: "Técnicas para melhorar a respiração e fortalecer o sistema pulmonar."
+      img: oftalmologiaJpg,
+      titulo: "Oftalmologia",
+      desc: "Avaliação da visão, exames de vista e tratamento de doenças oculares."
     },
     {
-      img: ultrassomImg,
-      titulo: "Ultrassom Terapêutico",
-      desc: "Uso de ondas sonoras para acelerar recuperação, reduzir inflamações e regenerar tecidos."
+      img: ortopediaJpg,
+      titulo: "Ortopedia",
+      desc: "Diagnóstico e tratamento de problemas ósseos, articulares e musculares."
     },
     {
-      img: eletroterapiaImg,
-      titulo: "Eletroterapia",
-      desc: "Técnicas com correntes elétricas para analgesia, fortalecimento e reabilitação muscular."
+      img: endocrinologiaJpg,
+      titulo: "Psiquiatria",
+      desc: "Acompanhamento da saúde mental, tratamento de ansiedade, depressão e mais."
     }
   ];
 
   return (
     <section id="tratamentos" className={styles.tratamentosSection}>
-      <h2 className={styles.title}>Cuidado Sob Medida</h2>
+      <h2 className={styles.title}>Especialidades Médicas</h2>
       <div className={styles.divider}>
-       
         <span className={styles.line}></span>
         <span className={styles.dot}></span>
         <span className={styles.dot}></span>
         <span className={styles.dot}></span>
-        
       </div>
       <p className={styles.subtitle}>
-        Conheça os principais tratamentos oferecidos para promover sua recuperação, prevenir lesões e melhorar sua qualidade de vida.
+        Nossa clínica oferece diversas especialidades médicas para atender você e sua família com excelência, cuidado e acolhimento.
       </p>
 
       <div className={styles.cards}>
