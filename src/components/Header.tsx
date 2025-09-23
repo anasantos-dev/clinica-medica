@@ -29,8 +29,7 @@ export function Header() {
 
       {/* Navegação */}
       <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
-        <a href="#inicio" onClick={() => setMenuOpen(false)}>Início</a>
-        <a href="#sobre" onClick={() => setMenuOpen(false)}>Nossa História</a>
+        <a href="#inicio" onClick={() => setMenuOpen(false)}>Quem Somos</a>
         <a href="#especialidades" onClick={() => setMenuOpen(false)}>Especialidades</a>
         <a href="#avaliacoes" onClick={() => setMenuOpen(false)}>Depoimentos</a>
         <a href="#informacoes" onClick={() => setMenuOpen(false)}>Dicas de Saúde</a>

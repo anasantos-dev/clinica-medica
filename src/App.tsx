@@ -1,7 +1,6 @@
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { Inicio } from './pages/Inicio';
-import { Sobre } from './pages/SobreMim';
+import { QuemSomos } from './pages/quemSomos';
 import { Tratamentos } from './pages/Tratamentos'; 
 import { Avaliacoes } from './pages/Avaliacoes';
 import { InformacoesUteis } from './pages/InformacoesUteis';
@@ -14,21 +13,17 @@ function App() {
     <div className="appContainer">
       <Header />
       <main className="mainContent">
-        <section id="inicio">
-          <Inicio />
-        </section>
+        <section id="quem somos">
+          <QuemSomos />
+        </section>     
 
-        <section id="sobre">
-          <Sobre />
+          <section id="chamada">
+          <Chamada />
         </section>
 
         <section id="tratamentos">   
           <Tratamentos />
-        </section>
-
-         <section id="chamada">
-          <Chamada />
-        </section>
+        </section>      
 
          <section id="avaliacoes">  
           <Avaliacoes />
