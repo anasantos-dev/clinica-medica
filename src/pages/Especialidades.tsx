@@ -1,4 +1,4 @@
-import styles from "../styles/tratamentos.module.css";
+import styles from "../styles/especialidades.module.css";
 import clinicaGeralJpg from "../assets/especialidades/clinicaGeral.jpg";
 import pediatriaJpg from "../assets/especialidades/pediatria.jpg";
 import ginecologiaJpg from "../assets/especialidades/ginecologia.jpg";
@@ -8,7 +8,7 @@ import oftalmologiaJpg from "../assets/especialidades/oftalmologia.jpg";
 import ortopediaJpg from "../assets/especialidades/ortopedia.jpg";
 import endocrinologiaJpg from "../assets/especialidades/endocrinologia.jpg";
 
-export function Tratamentos() {
+export function Especialidades() {
   const cards = [
     {
       img: clinicaGeralJpg,
@@ -53,7 +53,7 @@ export function Tratamentos() {
   ];
 
   return (
-    <section id="tratamentos" className={styles.tratamentosSection}>
+    <section id="especialidades" className={styles.especialidadesSection}>
       <h2 className={styles.title}>Especialidades Médicas</h2>
       <div className={styles.divider}>
         <span className={styles.line}></span>
@@ -66,14 +66,32 @@ export function Tratamentos() {
       </p>
 
       <div className={styles.cards}>
-        {cards.map((card, index) => (
-          <div key={index} className={styles.card}>
-            <img src={card.img} alt={card.titulo} className={styles.cardImg} />
-            <h3>{card.titulo}</h3>
-            <p>{card.desc}</p>
-          </div>
-        ))}
-      </div>
+  {cards.map((card, index) => (
+    <div
+      key={index}
+      className={`${styles.card} ${
+        index % 2 === 0 ? styles.cardVariantA : styles.cardVariantB
+      }`}
+    >
+      {/* Variante A → Texto embaixo */}
+      {index % 2 === 0 ? (
+        <>
+          <img src={card.img} alt={card.titulo} className={styles.cardImg} />
+          <h3>{card.titulo}</h3>
+          <p>{card.desc}</p>
+        </>
+      ) : (
+        /* Variante B → Texto em cima */
+        <>
+          <h3>{card.titulo}</h3>
+          <p>{card.desc}</p>
+          <img src={card.img} alt={card.titulo} className={styles.cardImg} />
+        </>
+      )}
+    </div>
+  ))}
+</div>
+
     </section>
   );
 }

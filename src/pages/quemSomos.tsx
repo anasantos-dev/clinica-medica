@@ -290,17 +290,31 @@ export function QuemSomos() {
           </div>
         </div>
 
-        {/* Bottom Curve */}
-        <div className={styles.curveBottom}>
-          <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0,0 C480,120 960,0 1440,120 L1440,0 L0,0 Z"
-              fill="#ffffff"
-            />
-          </svg>
-          <span className={styles.arrowDown}>⌄</span>
-        </div>
+{/*  onda */}
+<div className={styles.curveBottom}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+  >
+    <path
+      fill="#ffffff"   
+      fillOpacity="1"
+      d="M0,224L48,197.3C96,171,192,117,288,96C384,75,480,85,576,117.3C672,149,768,203,864,218.7C960,235,1056,213,1152,186.7C1248,160,1344,128,1392,112L1440,96L1440,320L0,320Z"
+    ></path>
+  </svg>
+</div>
+
+
+
+
+
+        
       </section>
+
+      
+
+      
       {/* ================= SEÇÃO QUEM SOMOS ================= */}
     </>
   );

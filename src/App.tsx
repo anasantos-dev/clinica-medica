@@ -1,11 +1,12 @@
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { QuemSomos } from './pages/quemSomos';
-import { Tratamentos } from './pages/Tratamentos'; 
 import { Avaliacoes } from './pages/Avaliacoes';
 import { InformacoesUteis } from './pages/InformacoesUteis';
 import { Chamada } from './pages/Chamada';
 import { Contato } from './pages/Contato';
+import { Especialidades } from './pages/Especialidades';
+
 
 
 function App() {
@@ -21,8 +22,8 @@ function App() {
           <Chamada />
         </section>
 
-        <section id="tratamentos">   
-          <Tratamentos />
+        <section id="especialidades">   
+          <Especialidades />
         </section>      
 
          <section id="avaliacoes">  
