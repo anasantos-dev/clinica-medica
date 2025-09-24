@@ -1,10 +1,10 @@
-import styles from "../styles/informacoesUteis.module.css";
-import { FaMapMarkerAlt, FaPhoneAlt, FaClock, FaNotesMedical } from "react-icons/fa";
+import styles from "../styles/atendimentos.module.css";
+import { FaMapMarkerAlt, FaClock, FaNotesMedical } from "react-icons/fa";
 
-export function InformacoesUteis() {
+export function Atendimentos() {
   return (
-    <section id="informacoes" className={styles.infoSection}>
-      <h2 className={styles.title}>Informações Úteis</h2>
+    <section id="atendimentos" className={styles.infoSection}>
+      <h2 className={styles.title}>Atendimentos</h2>
 
       <div className={styles.infoGrid}>
         <div className={styles.card}>
@@ -13,11 +13,7 @@ export function InformacoesUteis() {
           <p>Rua Exemplo, 123 - Centro<br />Cidade/UF</p>
         </div>
 
-        <div className={styles.card}>
-          <FaPhoneAlt className={styles.icon} />
-          <h3>Contato</h3>
-          <p>(91) 98025-4953<br />contato@clinicaexemplo.com</p>
-        </div>
+        
 
         <div className={styles.card}>
           <FaClock className={styles.icon} />
