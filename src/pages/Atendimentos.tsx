@@ -1,5 +1,5 @@
 import styles from "../styles/atendimentos.module.css";
-import { FaMapMarkerAlt, FaPhoneAlt, FaClock, FaNotesMedical } from "react-icons/fa";
+import { FaMapMarkerAlt, FaClock, FaNotesMedical } from "react-icons/fa";
 
 export function Atendimentos() {
   return (
@@ -13,11 +13,7 @@ export function Atendimentos() {
           <p>Rua Exemplo, 123 - Centro<br />Cidade/UF</p>
         </div>
 
-        <div className={styles.card}>
-          <FaPhoneAlt className={styles.icon} />
-          <h3>Contato</h3>
-          <p>(91) 98025-4953<br />contato@clinicaexemplo.com</p>
-        </div>
+        
 
         <div className={styles.card}>
           <FaClock className={styles.icon} />
