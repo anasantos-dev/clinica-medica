@@ -32,7 +32,7 @@ export function Header() {
         <a href="#inicio" onClick={() => setMenuOpen(false)}>Quem Somos</a>
         <a href="#especialidades" onClick={() => setMenuOpen(false)}>Especialidades</a>
         <a href="#avaliacoes" onClick={() => setMenuOpen(false)}>Depoimentos</a>
-        <a href="#informacoes" onClick={() => setMenuOpen(false)}>Dicas de Saúde</a>
+        <a href="#atendimentos" onClick={() => setMenuOpen(false)}>Atendimentos</a>
         <a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a>
       </nav>
 
