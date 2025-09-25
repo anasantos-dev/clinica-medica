@@ -1,14 +1,14 @@
-import styles from "../styles/especialidades.module.css";
-import clinicaGeralJpg from "../assets/especialidades/clinicaGeral.jpg";
-import pediatriaJpg from "../assets/especialidades/pediatria.jpg";
-import ginecologiaJpg from "../assets/especialidades/ginecologia.jpg";
-import cardiologiaJpg from "../assets/especialidades/cardiologia.jpg";
-import dermatologiaJpg from "../assets/especialidades/dermatologia.jpg";
-import oftalmologiaJpg from "../assets/especialidades/oftalmologia.jpg";
-import ortopediaJpg from "../assets/especialidades/ortopedia.jpg";
-import endocrinologiaJpg from "../assets/especialidades/endocrinologia.jpg";
+import styles from "../styles/specialties.module.css";
+import clinicaGeralJpg from "../assets/specialties/clinicaGeral.jpg";
+import pediatriaJpg from "../assets/specialties/pediatria.jpg";
+import ginecologiaJpg from "../assets/specialties/ginecologia.jpg";
+import cardiologiaJpg from "../assets/specialties/cardiologia.jpg";
+import dermatologiaJpg from "../assets/specialties/dermatologia.jpg";
+import oftalmologiaJpg from "../assets/specialties/oftalmologia.jpg";
+import ortopediaJpg from "../assets/specialties/ortopedia.jpg";
+import endocrinologiaJpg from "../assets/specialties/endocrinologia.jpg";
 
-export function Especialidades() {
+export function Specialties() {
   const cards = [
     {
       img: clinicaGeralJpg,

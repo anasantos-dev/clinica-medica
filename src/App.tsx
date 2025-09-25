@@ -1,11 +1,11 @@
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { QuemSomos } from './pages/quemSomos';
-import { Avaliacoes } from './pages/Avaliacoes';
-import { Atendimentos } from './pages/Atendimentos';
-import { Chamada } from './pages/Chamada';
-import { Contato } from './pages/Contato';
-import { Especialidades } from './pages/Especialidades';
+import { AboutUs } from './pages/AboutUs';
+import { CallToAction } from './pages/CallToAction';
+import { Specialties } from './pages/Specialties';
+import { Appointments } from './pages/Appointments';
+import { Reviews } from './pages/Reviews';
+import { Contact } from './pages/Contact';
 
 
 
@@ -14,30 +14,29 @@ function App() {
     <div className="appContainer">
       <Header />
       <main className="mainContent">
-        <section id="quem somos">
-          <QuemSomos />
+        <section id="about-us">
+          <AboutUs />
         </section>     
 
-          <section id="chamada">
-          <Chamada />
+        <section id="call-to-action">
+          <CallToAction />
         </section>
 
-        <section id="especialidades">   
-          <Especialidades />
+        <section id="specialties">   
+          <Specialties />
         </section> 
 
-        <section id="atendimentos">
-          <Atendimentos />
+        <section id="appointments">
+          <Appointments />
         </section>       
 
-         <section id="avaliacoes">  
-          <Avaliacoes />
+        <section id="reviews">  
+          <Reviews />
         </section>      
 
-        <section id="contato">
-          <Contato />
+        <section id="contact">
+          <Contact />
         </section>  
-
       </main>
       <Footer />
     </div>

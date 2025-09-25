@@ -1,8 +1,8 @@
 import { useState } from "react";
-import styles from "../styles/contato.module.css";
+import styles from "../styles/contact.module.css";
 import { FaWhatsapp, FaEnvelope, FaClock, FaMapMarkerAlt } from "react-icons/fa";
 
-export function Contato() {
+export function Contact() {
   const [status, setStatus] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

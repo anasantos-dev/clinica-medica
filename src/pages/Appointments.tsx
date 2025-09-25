@@ -1,10 +1,10 @@
 import { useEffect, useState, useRef } from "react";
-import styles from "../styles/atendimentos.module.css";
+import styles from "../styles/appointments.module.css";
 import { FaBoxOpen, FaStethoscope, FaTooth } from "react-icons/fa";
 import { BiTestTube } from "react-icons/bi";
 
 
-export function Atendimentos() {
+export function Appointments() {
    const [showButton, setShowButton] = useState(false);
    const buttonRef = useRef<HTMLDivElement>(null);
 

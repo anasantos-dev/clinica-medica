@@ -5,9 +5,9 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import styles from "../styles/avaliacoes.module.css";
+import styles from "../styles/reviews.module.css";
 
-export function Avaliacoes() {
+export function Reviews() {
   const avaliacoes = [
     {
       id: 1,

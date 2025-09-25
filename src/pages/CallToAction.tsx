@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "../styles/chamada.module.css";
+import styles from "../styles/call-to-action.module.css";
 
-export function Chamada() {
+export function  CallToAction() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [animate, setAnimate] = useState(false);
 

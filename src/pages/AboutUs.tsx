@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from "react";
-import styles from "../styles/quemSomos.module.css";
+import styles from "../styles/about-us.module.css";
 import consultaImg from "../assets/consulta.jpeg";
-import cardiologiaImg from "../assets/especialidades/cardiologia.jpg";
-import pediatriaImg from "../assets/especialidades/pediatria.jpg";
+import cardiologiaImg from "../assets/specialties/cardiologia.jpg";
+import pediatriaImg from "../assets/specialties/pediatria.jpg";
 import { FaStar, FaHeart, FaSmile } from "react-icons/fa";
 
 /* =================CARROSSEL PRINCIPAL================= */
-export function QuemSomos() {
+export function AboutUs() {
   /* ================= IMAGENS DO CARROSSEL ================= */
   const slides = [
     {
