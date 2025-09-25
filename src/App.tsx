@@ -14,6 +14,7 @@ function App() {
     <div className="appContainer">
       <Header />
       <main className="mainContent">
+
         <section id="about-us">
           <AboutUs />
         </section>     

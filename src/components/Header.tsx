@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../styles/header.module.css";
-import logoImg from "../assets/logo.jpeg"; // ajuste para o logo da clínica depois
+import logoImg from "../assets/logo.jpeg"; 
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,11 +29,11 @@ export function Header() {
 
       {/* Navegação */}
       <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
-        <a href="#inicio" onClick={() => setMenuOpen(false)}>Quem Somos</a>
-        <a href="#especialidades" onClick={() => setMenuOpen(false)}>Especialidades</a>
-        <a href="#avaliacoes" onClick={() => setMenuOpen(false)}>Depoimentos</a>
-        <a href="#atendimentos" onClick={() => setMenuOpen(false)}>Atendimentos</a>
-        <a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a>
+      <a href="#about-us" onClick={() => setMenuOpen(false)}>Quem Somos</a>
+      <a href="#specialties" onClick={() => setMenuOpen(false)}>Especialidades</a>
+      <a href="#reviews" onClick={() => setMenuOpen(false)}>Depoimentos</a>
+      <a href="#appointments" onClick={() => setMenuOpen(false)}>Atendimentos</a>
+      <a href="#contact" onClick={() => setMenuOpen(false)}>Contato</a>
       </nav>
 
       {/* Botão WhatsApp (desktop apenas) */}
