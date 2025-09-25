@@ -1,48 +1,202 @@
-.infoSection {
+.servicesSection {
   padding: 4rem 2rem;
-  background: #fff;
+  background: #f4f9ff;
   text-align: center;
+}
+
+/* Faixa de destaque */
+.highlightBox {
+  background: #2f9e78;
+  color: #f9f8f3;
+  font-size: 1.8rem;
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
-  color: #1a6e4e;
+  margin-bottom: 2.5rem;
+  color: #032440;
 }
 
-.infoGrid {
+.servicesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;  
 }
 
-.card {
-  background: #f9f9f9;
-  padding: 2rem 1.5rem;
+.serviceCard {
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* mantém itens no topo */
+  align-items: center;
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-4px);
+.serviceCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 2.2rem;
+  color: #2f9e78;
+  margin-bottom: rem;
+}
+
+.serviceCard h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem; /* espaço entre título e subtítulo */
+  color: #333;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  text-transform: uppercase; /* deixa tudo em MAIÚSCULO */
+  color: #666;
+  margin-bottom: 0.3rem; /* espaço entre subtítulo e preço */
+}
+
+
+.price {
+ font-size: 0.8rem;
+  text-transform: uppercase; /* deixa tudo em MAIÚSCULO */
+  color: #666;
+  margin-bottom: 0.3rem; /* espaço entre subtítulo e preço */
+}
+
+.price strong {
+  color: #0a7d2a;
+}
+
+/* Por que escolher ... */
+
+.differentials {
+  padding: 4rem 2rem;
+  background: #fffaf7; /* leve tom neutro para destacar */
+  text-align: center;
+}
+
+.differentialsTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #5a3d2b; 
+}
+
+.differentialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px; /* limite igual ao dos benefícios */
+  margin: 0 auto;    /* centraliza */
+}
+
+.differentialCard {
+  background: #af9479; /* marrom clarinho */
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+  font-family: 'Playfair Display', serif;
+}
+
+.differentialCard:hover {
+  transform: translateY(-5px);
 }
 
 .icon {
   font-size: 2rem;
-  color: #1a6e4e;
+  color: #ac845c; /* dourado suave para destacar */
   margin-bottom: 1rem;
+  display: inline-block;
 }
 
-.card h3 {
+.iconCircle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f7b733, #fc4a1a); /* laranja → dourado */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.check {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.differentialCard h3 {
+  font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  color: #fff;
 }
 
-.card p {
-  font-size: 1rem;
-  color: #555;
+.differentialCard p {
+  font-size: 0.95rem;
   line-height: 1.5;
+  color: #fdfdfd;
 }
+
+.buttonWrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease;
+}
+
+.buttonWrapper.slideIn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.consultButton {
+  background-color: #2f9e78;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.consultButton:hover {
+  background-color: #267e60;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(47, 158, 120, 0.6);
+}
+
+.arrow {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+

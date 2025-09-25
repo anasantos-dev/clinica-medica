@@ -54,7 +54,7 @@ export function Especialidades() {
 
   return (
     <section id="especialidades" className={styles.especialidadesSection}>
-      <h2 className={styles.title}>Especialidades Médicas</h2>
+      <h2 className={styles.title}>Atendimento médico inclusivo e acessível</h2>
       <div className={styles.divider}>
         <span className={styles.line}></span>
         <span className={styles.dot}></span>
