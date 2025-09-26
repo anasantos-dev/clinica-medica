@@ -1,0 +1,191 @@
+.dentistrySection {
+  background: #f2f8ff;
+  padding: 4rem 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;      
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Lado da imagem */
+.imageSide {
+  flex: 1;            
+  display: flex;
+  justify-content: center;
+  align-items: center;      
+}
+
+/* Imagem */
+.sorrisoImage {
+  width: 100%;
+  max-width: 500px;    
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  height: auto;        /*  tira o fixo de 600px */
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .sorrisoImage {
+    max-width: 700px;   /* aumenta largura */
+    height: 600px;      /*  aumenta altura */
+    object-fit: cover;
+  }
+}
+
+/* Lado dos textos */
+.textSide {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  text-align: left;   /* desktop alinhado à esquerda */
+}
+
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0a7d2a;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #d08c40;
+}
+
+.sectionSubtitle {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.decorativeLine {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 1rem 0 2rem;
+}
+
+.line {
+  width: 50px;
+  height: 3px;
+  background-color: #0a7d2a;
+  border-radius: 2px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #b97a45;
+  border-radius: 50%;
+}
+
+/* Lista com efeito acumulativo */
+.typingList {
+  margin-bottom: 2rem;
+}
+
+.finishedLine {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #032440;
+  margin: 0.3rem 0;
+}
+
+.currentLine {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #032440;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  background: #032440;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+@media (min-width: 1024px) {
+  .sorrisoImage {
+    max-width: 600px;
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #444;
+  margin: 2rem 0 1rem;
+}
+
+.ctaButton {
+  background-color: #0a7d2a;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.ctaButton:hover {
+  background-color: #065c20;
+  transform: scale(1.07);
+  box-shadow: 0 0 12px rgba(47, 158, 120, 0.6);
+}
+
+/* Caixa estilo "Nossos Valores" */
+.typingBox {
+  background: #f4fff7;
+  border-left: 6px solid #0a7d2a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 400px;   
+}
+
+.boxTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a7d2a;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.typingList p {
+  margin: 0.3rem 0;
+  text-align: left;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* só no mobile */
+    text-align: center;
+  }
+
+  .textSide {
+    text-align: center; /* centraliza textos no mobile */
+  }
+
+  .sorrisoImage {
+    max-width: 300px; /* limita no mobile */
+  }
+}

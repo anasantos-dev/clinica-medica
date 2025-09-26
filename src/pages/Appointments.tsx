@@ -16,6 +16,15 @@ export function Appointments() {
     }
   };
 
+  // Função para rolar até a seção odontologia
+const scrollToDentistry = () => {
+  const section = document.getElementById("dentistry");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+
    useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -133,7 +142,7 @@ export function Appointments() {
         </div>
 
         {/* Odontologia */}
-        <div className={styles.serviceCard}>
+        <div className={styles.serviceCard} onClick={scrollToDentistry}>
           <FaTooth className={styles.icon} style={{ color: "#1e90ff" }}/>
           <h3>Odontologia</h3>
           <p className={styles.price}>Avaliação</p>
