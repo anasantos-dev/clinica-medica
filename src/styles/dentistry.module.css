@@ -34,7 +34,7 @@
 @media (min-width: 1024px) {
   .sorrisoImage {
     max-width: 700px;   /* aumenta largura */
-    height: 600px;      /*  aumenta altura */
+    height: 500px;      /*  aumenta altura */
     object-fit: cover;
   }
 }

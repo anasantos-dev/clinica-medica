@@ -24,6 +24,14 @@ const scrollToDentistry = () => {
   }
 };
 
+// Função para rolar até a seção de exames laboratoriais
+const scrollToExams = () => {
+  const section = document.getElementById("exams");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 
    useEffect(() => {
     const observer = new IntersectionObserver(
@@ -152,7 +160,7 @@ const scrollToDentistry = () => {
         </div>
 
         {/* Exames */}
-        <div className={styles.serviceCard}>
+        <div className={styles.serviceCard} onClick={scrollToExams}>
           <BiTestTube className={styles.icon}style={{ color: "#8a2be2" }} />
           <h3>Exames laboratoriais</h3>
           <p className={styles.price}>A partir de</p>
