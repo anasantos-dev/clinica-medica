@@ -7,6 +7,7 @@ import { Appointments } from './pages/Appointments';
 import { Reviews } from './pages/Reviews';
 import { Contact } from './pages/Contact';
 import { Dentistry } from './pages/Dentistry';
+import { Exams } from './pages/Exams';
 
 
 
@@ -30,6 +31,10 @@ function App() {
 
         <section id="dentistry">
          <Dentistry />
+        </section>
+
+        <section id="exams">
+          <Exams />
         </section>
 
         <section id="appointments">
