@@ -6,6 +6,7 @@ import { Specialties } from './pages/Specialties';
 import { Appointments } from './pages/Appointments';
 import { Reviews } from './pages/Reviews';
 import { Contact } from './pages/Contact';
+import { Dentistry } from './pages/Dentistry';
 
 
 
@@ -26,6 +27,10 @@ function App() {
         <section id="specialties">   
           <Specialties />
         </section> 
+
+        <section id="dentistry">
+         <Dentistry />
+        </section>
 
         <section id="appointments">
           <Appointments />
