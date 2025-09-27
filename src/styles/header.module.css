@@ -12,7 +12,7 @@
   z-index: 1000;
 }
 
-/* Logo */
+
 .logo {
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@
   display: block;
 }
 
-/* Navegação */
+
 .nav {
   display: flex;
   gap: 1.5rem;
@@ -57,7 +57,7 @@
   color: #2f9e78;
 }
 
-/* Botão WhatsApp (desktop) */
+
 .whatsappBtn {
   background: #25d366;
   color: #fff;
@@ -74,7 +74,7 @@
   transform: scale(1.05);
 }
 
-/* Menu mobile */
+
 .menuToggle {
   display: none;
   font-size: 1.8rem;
@@ -85,7 +85,7 @@
   z-index: 1100;
 }
 
-/* Overlay fundo escuro */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -96,7 +96,7 @@
   z-index: 900;
 }
 
-/* Mobile */
+
 @media (max-width: 900px) {
   .nav {
     position: fixed;

@@ -5,10 +5,8 @@ import { FaCheckCircle } from "react-icons/fa";
 export function Exams() {
   return (
     <section id="exams" className={styles.examsSection}>
-      <div className={styles.container}>
-        
-        {/* Texto à esquerda */}
-        <div className={styles.textSide}>
+      <div className={styles.container}>     
+          <div className={styles.textSide}>
           <h3 className={styles.subtitle}>
             Está buscando exames rápidos e confiáveis?
           </h3>
@@ -18,8 +16,6 @@ export function Exams() {
   <li><FaCheckCircle className={styles.icon}/> Exames cardiológicos</li>
   <li><FaCheckCircle className={styles.icon}/> Ultrassonografia</li>
 </ul>
-
-
           <h4 className={styles.highlightTitle}>
             Serviços que encaminhamos com desconto exclusivo:
           </h4>
@@ -31,8 +27,7 @@ export function Exams() {
             <li><FaCheckCircle className={styles.icon}/>Radiografia</li>
           </ul>
         </div>
-
-        {/* Imagem à direita */}
+       
         <div className={styles.imageSide}>
           <h2 className={styles.title}>Exames e diagnósticos</h2>
           <img

@@ -7,7 +7,7 @@ export function Header() {
 
   return (
     <header className={styles.header}>
-      {/* Logo + nome */}
+     
       <div className={styles.logo}>
         <img src={logoImg} alt="Logo Clínica Vida Saudável" className={styles.logoImg} />
         <div>
@@ -16,7 +16,7 @@ export function Header() {
         </div>
       </div>
 
-      {/* Botão Menu Hamburguer (mobile) */}
+     
       <button
         className={styles.menuToggle}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -24,10 +24,10 @@ export function Header() {
         {menuOpen ? "✖" : "☰"}
       </button>
 
-      {/* Overlay (fundo escuro) */}
+     
       {menuOpen && <div className={styles.overlay} onClick={() => setMenuOpen(false)}></div>}
 
-      {/* Navegação */}
+     
       <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
       <a href="#about-us" onClick={() => setMenuOpen(false)}>Quem Somos</a>
       <a href="#specialties" onClick={() => setMenuOpen(false)}>Especialidades</a>
@@ -36,7 +36,7 @@ export function Header() {
       <a href="#contact" onClick={() => setMenuOpen(false)}>Contato</a>
       </nav>
 
-      {/* Botão WhatsApp (desktop apenas) */}
+      
       <a
         href="https://wa.me/5591980254953"
         target="_blank"

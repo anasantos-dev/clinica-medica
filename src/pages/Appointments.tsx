@@ -7,8 +7,6 @@ import { BiTestTube } from "react-icons/bi";
 export function Appointments() {
    const [showButton, setShowButton] = useState(false);
    const buttonRef = useRef<HTMLDivElement>(null);
-
-  // Função para rolar até a seção de especialidades
   const scrollToSpecialties = () => {
     const section = document.getElementById("especialidades");
     if (section) {
@@ -16,7 +14,6 @@ export function Appointments() {
     }
   };
 
-  // Função para rolar até a seção odontologia
 const scrollToDentistry = () => {
   const section = document.getElementById("dentistry");
   if (section) {
@@ -24,7 +21,6 @@ const scrollToDentistry = () => {
   }
 };
 
-// Função para rolar até a seção de exames laboratoriais
 const scrollToExams = () => {
   const section = document.getElementById("exams");
   if (section) {
@@ -55,16 +51,13 @@ const scrollToExams = () => {
   }, []);
 
   return (
-    <section id="atendimentos" className={styles.servicesSection}>
-      {/* Faixa de destaque */}
+    <section id="atendimentos" className={styles.servicesSection}>    
       <div className={styles.highlightBox}>
         <p>
           A Clínica Vida Saudável existe para te ajudar a cuidar da sua saúde de
           forma rápida, segura e simplificada.
         </p>
       </div>
-
-      {/* Diferenciais */}
       <div className={styles.differentials}>
         <h2 className={styles.differentialsTitle}>
           Por que escolher a Clínica Vida Saudável?
@@ -112,10 +105,6 @@ const scrollToExams = () => {
             </p>
           </div>
         </div>
-
-
-
-          {/* Botão animado */}
         <div
           ref={buttonRef}
           className={`${styles.buttonWrapper} ${
@@ -133,13 +122,9 @@ const scrollToExams = () => {
         </div>
       </div>
 
-
-
-      {/* Serviços */}
-      <h2 className={styles.title}>Nossos Benefícios</h2>
+      <h2 className={styles.title}>Conheça Nossos <span className={styles.highlight}>benefícios</span></h2>
       <div className={styles.servicesGrid}>
 
-        {/* Consultas */}
         <div className={styles.serviceCard} onClick={scrollToSpecialties}>
           <FaStethoscope className={styles.icon} style={{ color: "#2f9e78" }}/>
           <h3>Consultas especializadas</h3>
@@ -149,7 +134,6 @@ const scrollToExams = () => {
           </p>
         </div>
 
-        {/* Odontologia */}
         <div className={styles.serviceCard} onClick={scrollToDentistry}>
           <FaTooth className={styles.icon} style={{ color: "#1e90ff" }}/>
           <h3>Odontologia</h3>
@@ -159,7 +143,6 @@ const scrollToExams = () => {
           </p>
         </div>
 
-        {/* Exames */}
         <div className={styles.serviceCard} onClick={scrollToExams}>
           <BiTestTube className={styles.icon}style={{ color: "#8a2be2" }} />
           <h3>Exames laboratoriais</h3>
@@ -169,7 +152,6 @@ const scrollToExams = () => {
           </p>
         </div>
 
-        {/* Pacotes */}
         <div className={styles.serviceCard}>
           <FaBoxOpen className={styles.icon} style={{ color: "#f4a261" }} />
           <h3>Pacotes de saúde</h3>

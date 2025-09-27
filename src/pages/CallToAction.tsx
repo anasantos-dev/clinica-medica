@@ -10,12 +10,12 @@ export function  CallToAction() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setAnimate(true); // ativa a animação
-            observer.unobserve(entry.target); // dispara só 1 vez
+            setAnimate(true); 
+            observer.unobserve(entry.target); 
           }
         });
       },
-      { threshold: 0.3 } // 30% da seção visível já ativa
+      { threshold: 0.3 } 
     );
 
     if (sectionRef.current) {
@@ -41,8 +41,6 @@ export function  CallToAction() {
           agende sua consulta!
         </span>
       </h2>
-
-      {/* Divider moderno */}
       <div className={styles.divider}>
         <span className={styles.line}></span>
         <span className={styles.circle}></span>

@@ -1,10 +1,9 @@
 .servicesSection {
-  padding: 4rem 2rem;
+  padding: 1.5rem 1.5rem;
   background: #f4f9ff;
   text-align: center;
 }
 
-/* Faixa de destaque */
 .highlightBox {
   background: #2f9e78;
   color: #f9f8f3;
@@ -40,7 +39,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* mantém itens no topo */
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
@@ -59,34 +58,38 @@
 
 .serviceCard h3 {
   font-size: 1.1rem;
-  margin-bottom: 0.8rem; /* espaço entre título e subtítulo */
+  margin-bottom: 0.8rem;
   color: #333;
 }
 
 .subtitle {
   font-size: 0.8rem;
-  text-transform: uppercase; /* deixa tudo em MAIÚSCULO */
+  text-transform: uppercase;
   color: #666;
-  margin-bottom: 0.3rem; /* espaço entre subtítulo e preço */
+  margin-bottom: 0.3rem;
+}
+
+.highlight {
+  color: #d08c40; 
 }
 
 
 .price {
  font-size: 0.8rem;
-  text-transform: uppercase; /* deixa tudo em MAIÚSCULO */
+  text-transform: uppercase; 
   color: #666;
-  margin-bottom: 0.3rem; /* espaço entre subtítulo e preço */
+  margin-bottom: 0.3rem; 
 }
 
 .price strong {
   color: #0a7d2a;
 }
 
-/* Por que escolher ... */
+
 
 .differentials {
-  padding: 4rem 2rem;
-  background: #fffaf7; /* leve tom neutro para destacar */
+  padding: 1rem 2rem;
+  background: #fffaf7; 
   text-align: center;
 }
 
@@ -101,12 +104,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  max-width: 1100px; /* limite igual ao dos benefícios */
-  margin: 0 auto;    /* centraliza */
+  max-width: 1100px;
+  margin: 0 auto;    
 }
 
 .differentialCard {
-  background: #af9479; /* marrom clarinho */
+  background: #af9479; 
   border-radius: 16px;
   padding: 2rem 1.5rem;
   color: #fff;
@@ -121,7 +124,7 @@
 
 .icon {
   font-size: 2rem;
-  color: #ac845c; /* dourado suave para destacar */
+  color: #ac845c; 
   margin-bottom: 1rem;
   display: inline-block;
 }
@@ -134,7 +137,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #f7b733, #fc4a1a); /* laranja → dourado */
+  background: linear-gradient(135deg, #f7b733, #fc4a1a);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -177,7 +180,7 @@
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
-  padding: 1rem 2.5rem;
+  padding: 0.3rem 1.5rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -187,6 +190,8 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+
 
 .consultButton:hover {
   background-color: #267e60;

@@ -75,8 +75,7 @@ export function Reviews() {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* Botões navegação */}
+     
       <div className={styles.controls}>
         <button className={styles.prevBtn}>◀</button>
         <span className={styles.counter}>
