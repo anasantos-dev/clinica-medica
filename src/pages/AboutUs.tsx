@@ -5,9 +5,9 @@ import cardiologiaImg from "../assets/specialties/cardiologia.jpg";
 import pediatriaImg from "../assets/specialties/pediatria.jpg";
 import { FaStar, FaHeart, FaSmile } from "react-icons/fa";
 
-/* =================CARROSSEL PRINCIPAL================= */
+
 export function AboutUs() {
-  /* ================= IMAGENS DO CARROSSEL ================= */
+ 
   const slides = [
     {
       image: consultaImg,
@@ -47,7 +47,7 @@ export function AboutUs() {
 
   const slideWidthPercent = 100 / slides.length;
 
-  /* ================= VALORES ================= */
+  
   const valuesRef = useRef<HTMLDivElement | null>(null);
   const [valuesVisible, setValuesVisible] = useState(false);
 
@@ -73,11 +73,11 @@ export function AboutUs() {
     };
   }, []);
 
-  /* ================= RETORNO DO COMPONENTE ================= */
+ 
   return (
     <>
       <main className={styles.carouselContainer}>
-        {/* ================= EFEITOS PRIMEIRA IMAGEM ================= */}
+       
         <div
           className={styles.slidesWrapper}
           style={{
@@ -179,7 +179,7 @@ export function AboutUs() {
           })}
         </div>
 
-        {/* ================= EFEITOS PRIMEIRA IMAGEM ================= */}
+      
         <button
           className={`${styles.arrow} ${styles.arrowLeft}`}
           onClick={goToPrevSlide}
@@ -212,7 +212,7 @@ export function AboutUs() {
           </svg>
         </button>
 
-        {/* Indicators */}
+       
         <div className={styles.indicators}>
           {slides.map((_, index) => (
             <button
@@ -226,9 +226,7 @@ export function AboutUs() {
           ))}
         </div>
       </main>
-      {/* ================= PRIMEIRO CARROSSEL ================= */}
-
-      {/* ================= SEÇÃO QUEM SOMOS ================= */}
+          
       <section className={styles.quemSomos}>
         <div className={styles.contentWrapper}>
           <div className={styles.textBlock}>
@@ -245,7 +243,7 @@ export function AboutUs() {
               dedicação.
             </p>
 
-            {/* ====== Valores ====== */}
+          
             <div
               ref={valuesRef}
               className={`${styles.valoresBox} ${
@@ -265,8 +263,7 @@ export function AboutUs() {
                 </li>
               </ul>
             </div>
-            {/* ====== Valores ====== */}
-
+           
             <p className={styles.highlight}>
               Cuidar da sua saúde ficou mais fácil — agende já!
             </p>
@@ -290,7 +287,6 @@ export function AboutUs() {
           </div>
         </div>
 
-{/*  onda */}
 <div className={styles.curveBottom}>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -304,18 +300,8 @@ export function AboutUs() {
     ></path>
   </svg>
 </div>
-
-
-
-
-
-        
-      </section>
-
-      
-
-      
-      {/* ================= SEÇÃO QUEM SOMOS ================= */}
-    </>
+</section>    
+    
+   </>
   );
 }

@@ -3,7 +3,7 @@
    Garante que zoom/redimensionamento afete todas as páginas igualmente.
 */
 
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@
   font-family: 'Nunito', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-/* Estrutura base */
+
 html, body, #root {
   height: 100%;
   width: 100%;
@@ -26,7 +26,7 @@ body {
   color: rgba(33, 53, 71, 0.95); 
 }
 
-/* Containers principais */
+
 .appContainer {
   display: flex;
   flex-direction: column;
@@ -34,14 +34,14 @@ body {
   width: 100%;
 }
 
-/* cada página / alinhamento interno */
+
 .mainContent {
   flex: 1;
   display: block; 
   width: 100%;
 }
 
-/* Links */
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -52,7 +52,7 @@ a:hover {
   color: #535bf2;
 }
 
-/* Botões padrão */
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -73,7 +73,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* fallback */
+
 @media (prefers-color-scheme: light) {
   body {
     background: #ffffff;
@@ -88,9 +88,9 @@ button:focus-visible {
   }
 }
 
-/* Ajuste para navegação com header fixo */
+
 html {
-  scroll-behavior: smooth;   /* deixa a rolagem suave */
-  scroll-padding-top: 90px;  /* compensa a altura do header */
+  scroll-behavior: smooth;   
+  scroll-padding-top: 90px; 
 }
 

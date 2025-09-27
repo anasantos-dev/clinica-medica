@@ -1,5 +1,5 @@
 .especialidadesSection {
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
   background: #f9f9f9;
   text-align: center;
 }
@@ -21,7 +21,7 @@
   line-height: 1.6;
 }
 
-/* Divider decorativo */
+
 .divider {
   display: flex;
   justify-content: center;
@@ -44,7 +44,7 @@
   border-radius: 50%;
 }
 
-/* Cards */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -73,14 +73,14 @@
   margin-bottom: 1rem;
 }
 
-/* Variante A → canto superior esquerdo arredondado */
+
 .cardVariantA .cardImg {
-  border-radius: 20px 0 0 20px; /* arredonda canto esquerdo */
+  border-radius: 20px 0 0 20px; 
 }
 
-/* Variante B → canto inferior direito arredondado */
+
 .cardVariantB .cardImg {
-  border-radius: 0 20px 20px 0; /* arredonda canto direito */
+  border-radius: 0 20px 20px 0; 
 }
 
 .card h3 {
@@ -95,8 +95,6 @@
   line-height: 1.5;
 }
 
-
-/* Responsivo */
 @media (max-width: 768px) {
   .title {
     font-size: 1.8rem;

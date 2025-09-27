@@ -73,7 +73,7 @@ export function Specialties() {
         index % 2 === 0 ? styles.cardVariantA : styles.cardVariantB
       }`}
     >
-      {/* Variante A → Texto embaixo */}
+     
       {index % 2 === 0 ? (
         <>
           <img src={card.img} alt={card.titulo} className={styles.cardImg} />
@@ -81,7 +81,7 @@ export function Specialties() {
           <p>{card.desc}</p>
         </>
       ) : (
-        /* Variante B → Texto em cima */
+        
         <>
           <h3>{card.titulo}</h3>
           <p>{card.desc}</p>

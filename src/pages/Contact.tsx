@@ -40,8 +40,7 @@ export function Contact() {
       </p>
 
       <div className={styles.grid}>
-        {/* Informações */}
-        <div className={styles.infoBox}>
+             <div className={styles.infoBox}>
           <div className={styles.infoItem}>
             <FaMapMarkerAlt className={styles.icon} />
             <h3>Endereço</h3>
@@ -74,8 +73,6 @@ export function Contact() {
             </a>
           </div>
         </div>
-
-        {/* Formulário */}
         <form className={styles.formBox} onSubmit={handleSubmit}>
           <label>
             Nome*:
@@ -98,7 +95,6 @@ export function Contact() {
         </form>
       </div>
 
-      {/* Mapa */}
       <div className={styles.mapBox}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.000000!2d-46.656000!3d-23.550000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x000000000000000!2sCl%C3%ADnica%20Exemplo!5e0!3m2!1spt-BR!2sbr!4v1234567890"

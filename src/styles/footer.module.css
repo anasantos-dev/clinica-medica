@@ -1,9 +1,8 @@
 .footer {
-  background: #f9f9f9;
-  padding: 2rem 5% 1rem 5%;
+  background: #d5efe1;
+  padding: 0.8rem 5% 1rem 5%;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
   margin-top: auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +18,7 @@
 }
 
 .copy strong {
-  color: #1a6e4e; /* Verde padrão da clínica */
+  color: #1a6e4e; 
 }
 
 .social {
@@ -34,7 +33,7 @@
 }
 
 .social a:hover {
-  color: #b5a564; /* Dourado suave no hover */
+  color: #b5a564; 
 }
 
 /* Responsivo */

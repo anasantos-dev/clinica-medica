@@ -1,6 +1,6 @@
 .examsSection {
   background: #f9fbff;
-  padding: 4rem 2rem;
+  padding: 1.5rem 0.5rem;
 }
 
 .container {
@@ -54,7 +54,7 @@
 
 .examsImage {
   width: 100%;
-  max-width: 450px;   /* aumenta o limite da largura */
+  max-width: 450px;   
   height: auto;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
@@ -64,11 +64,11 @@
 @media (max-width: 768px) {
   .examsImage {
     max-width: 100%;
-    height: auto;   /* deixa ela se adaptar no celular */
+    height: auto; 
   }
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -99,6 +99,6 @@
 }
 
 .icon {
-  color: #0a7d2a; /* verde profissional */
+  color: #0a7d2a; 
   font-size: 1.2rem;
 }

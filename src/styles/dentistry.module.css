@@ -1,6 +1,6 @@
 .dentistrySection {
   background: #f2f8ff;
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .container {
@@ -11,9 +11,9 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+ 
 }
 
-/* Lado da imagem */
 .imageSide {
   flex: 1;            
   display: flex;
@@ -21,32 +21,31 @@
   align-items: center;      
 }
 
-/* Imagem */
 .sorrisoImage {
   width: 100%;
-  max-width: 500px;    
+  max-width: 400px;    
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  height: auto;        /*  tira o fixo de 600px */
+  height: auto;        
   object-fit: cover;
 }
 
 @media (min-width: 1024px) {
   .sorrisoImage {
-    max-width: 700px;   /* aumenta largura */
-    height: 500px;      /*  aumenta altura */
+    max-width: 700px;   
+    height: 500px;     
     object-fit: cover;
   }
 }
 
-/* Lado dos textos */
+
 .textSide {
   flex: 1;
   min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;  
-  text-align: left;   /* desktop alinhado à esquerda */
+  text-align: left;   
 }
 
 
@@ -88,7 +87,7 @@
   border-radius: 50%;
 }
 
-/* Lista com efeito acumulativo */
+
 .typingList {
   margin-bottom: 2rem;
 }
@@ -149,7 +148,7 @@
   box-shadow: 0 0 12px rgba(47, 158, 120, 0.6);
 }
 
-/* Caixa estilo "Nossos Valores" */
+
 .typingBox {
   background: #f4fff7;
   border-left: 6px solid #0a7d2a;
@@ -174,18 +173,18 @@
 }
 
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* só no mobile */
+    flex-direction: column; 
     text-align: center;
   }
 
   .textSide {
-    text-align: center; /* centraliza textos no mobile */
+    text-align: center; 
   }
 
   .sorrisoImage {
-    max-width: 300px; /* limita no mobile */
+    max-width: 300px; 
   }
 }
